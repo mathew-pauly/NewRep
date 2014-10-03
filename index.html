@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html lang="en" class="ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <title>Car Pool</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/cosmo/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+        
+        <link rel="stylesheet" href="Resources/css/style.css" type="text/css">
+
+        <!-- Scripts are at the bottom of the page -->
+       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    </head>
+    <body>
+
+        <!-- LOGO -->
+        <div class="header">
+            <h1>
+                <a data-scroll="scrollto" href="#start">
+                    Car Pool
+                </a>
+            </h1>
+        </div>
+        <!-- /LOGO -->
+
+        <!-- MAIN CONTENT SECTION -->
+        <section id="content" style="width: 10002px;">
+
+            <!-- SECTION -->
+            <section class="clearfix section isotope" id="start">
+
+                <!-- SECTION TITLE -->
+                <h3 class="block-title"></h3>
+                <!-- /SECTION TITLE -->
+
+                <!-- SECTION TILES -->
+                <div class="tile w1 red h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-user"></i>
+                        <p class="title">My Profile</p>
+                    </a>
+                </div>
+                <div class="tile turquoise w1 h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-map-marker"></i>
+                        <p class="title">My Location</p>
+                    </a>
+                </div>
+                <div class="tile yellow w1 h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-road"></i>
+                        <p class="title">My Routes</p>
+                    </a>
+                </div>
+                <div class="tile green w1 h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-history"></i>
+                        <p class="title">My History</p>
+                    </a>
+                </div>
+                <div class="tile blue w1 h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-th-list"></i>
+                        <p class="title">My Picks</p>
+                    </a>
+                </div>
+                <div class="tile purple w1 h1 isotope-item">
+                    <a class="link" href="#">
+                        <i class="fa fa-hand-o-right"></i>
+                        <p class="title">Next Schedule</p>
+                    </a>
+                </div>
+                <!-- /SECTION TILES -->
+
+            </section>
+            <!-- /SECTION -->
+
+            <!-- SECTION -->
+            <section class="clearfix section isotope">
+
+                <!-- SECTION TITLE -->
+                <h3 class="block-title">My Profile View</h3>
+                <!-- /SECTION TITLE -->
+
+                <!-- SECTION TILES -->
+
+
+                <div class="tile htmltile transparent w3 h4 isotope-item mCustomScrollbar">
+                    <div class="tilecontent">
+                        <div class="content">
+                            <h3>Mathew Pauly</h3>
+                            <h4 class="muted">Age: 25 Gender:Male</h4>
+                            <br>
+                            <p>
+                                Yourself: I am currently working at CTS.
+                            </p>
+                            <ul>
+                                <li><b>Address:</b> Plot No22, 1A Thirumurthy Nagar, Madhanandhapuram, Porur, Chennai - 600116 </li>
+                                <li>Mobile Number: +91 9716800041</li>
+                                <li>LinkedIn Profile: <a href="http://in.linkedin.com/pub/mathew-pauly/a3/85/533" target="_blank">http://in.linkedin.com/pub/mathew-pauly/a3/85/533</a></li>
+                                <li>Email Id: mathewp.info@gmail.com</li>
+                                <li>Marital Status: Single</li>
+                            </ul>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- /SECTION TILES -->
+
+            </section>
+            <!-- /SECTION -->
+
+            <!-- SECTION -->
+            <section class="clearfix section isotope" id="map">
+
+                <!-- SECTION TITLE -->
+                <h3 class="block-title">My Current Location</h3>
+                <!-- /SECTION TITLE -->
+
+                <!-- SECTION TILES -->
+                <div class="tile white map w3 h4 isotope-item">
+                    <div id="gmap"></div>
+                </div>
+                <!-- /SECTION TILES -->
+
+            </section>
+            <!-- /SECTION -->
+
+        </section> 
+        <!-- /MAIN CONTENT SECTION -->
+
+        <!-- PRELOADER -->
+        <section class="mlightbox" id="loader" style="display: none;">
+            <a href="#">
+                <img src="img/preloader.gif" alt="">
+            </a>
+        </section>
+        <!-- /PRELOADER -->
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="Resources/js/respond.min.js"></script>
+        <script src="Resources/js/jquery.isotope.min.js"></script>
+        <script src="Resources/js/jquery.mousewheel.js"></script>
+        <script src="Resources/js/jquery.mCustomScrollbar.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="http://maps.gstatic.com/maps-api-v3/api/js/18/5/main.js" type="text/javascript"></script>
+        <script src="Resources/js/jquery.gmaps.js"></script>
+        <script src="Resources/js/gmap.js"></script>
+        <script src="Resources/js/tileshow.js"></script>
+        <script src="Resources/js/mlightbox.js"></script>
+        <script src="Resources/js/jquery.fitVids.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script> <!-- Bootstrap Library -->
+
+        <script src="Resources/js/script.js"></script>
+
+
+    
+</body></html>
